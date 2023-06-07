@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="Intellij files">
-      <change afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="add client module with default pom">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -104,7 +105,7 @@
       <updated>1686097402429</updated>
       <workItem from="1686097403986" duration="132000" />
       <workItem from="1686097661110" duration="1857000" />
-      <workItem from="1686100246361" duration="42000" />
+      <workItem from="1686100246361" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1686098174945</created>
@@ -120,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686098190993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add client module with default pom">
+      <created>1686100343933</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686100343933</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,9 +146,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="Intellij files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Intellij files" />
+    <MESSAGE value="add client module with default pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="add client module with default pom" />
   </component>
 </project>
