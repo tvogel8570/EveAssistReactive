@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/Infrastructure/postgres/sql/backup/
+/Infrastructure/keycloak/
+/Infrastructure/postgres/password.txt
