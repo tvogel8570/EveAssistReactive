@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="Intellij files">
-      <change afterPath="$PROJECT_DIR$/Infrastructure/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/postgres/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/postgres/sql/init/1-init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/postgres/sql/init/2-init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/self_signed.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +33,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
     "last_opened_file_path": "C:/Users/tvogel/git/EveAssist/Infrastructure/keycloak",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
@@ -106,6 +104,7 @@
       <updated>1686097402429</updated>
       <workItem from="1686097403986" duration="132000" />
       <workItem from="1686097661110" duration="1857000" />
+      <workItem from="1686100246361" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1686098174945</created>
