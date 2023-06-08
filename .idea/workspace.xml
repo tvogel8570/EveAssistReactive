@@ -4,29 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/com/eveassist/client/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/test/java/com/eveassist/client/ClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="add client module with default pom">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/self_signed.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,13 +30,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "C:/Users/tvogel/git/mysamples",
+    "last_opened_file_path": "C:/Users/tvogel/git/EveAssist/Infrastructure/keycloak",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,8 +44,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "62608e08adc29a8d6dbc9754e659f125",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -72,18 +55,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure" />
       <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure\keycloak" />
-      <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure\postgres\sql\backup" />
       <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure\postgres\backup" />
       <recent name="C:\Users\tvogel\git\EveAssist" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure\postgres\sql" />
       <recent name="C:\Users\tvogel\git\EveAssist\Infrastructure" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.eveassist.client" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.Infrastructure/compose.yaml: Compose Deployment">
@@ -110,41 +88,9 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="Infrastructure/compose.yaml.eve-postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="eve-postgres" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="Infrastructure/compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Infrastructure/compose.yaml.keycloak: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="keycloak" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="Infrastructure/compose.yaml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.Infrastructure/compose.yaml: Compose Deployment" />
-        <item itemvalue="Docker.Infrastructure/compose.yaml.eve-postgres: Compose Deployment" />
-        <item itemvalue="Docker.Infrastructure/compose.yaml.keycloak: Compose Deployment" />
         <item itemvalue="Shell Script.self_signed.sh" />
       </list>
     </recent_temporary>
@@ -159,15 +105,7 @@
       <updated>1686097402429</updated>
       <workItem from="1686097403986" duration="132000" />
       <workItem from="1686097661110" duration="1857000" />
-      <workItem from="1686100246361" duration="1443000" />
-      <workItem from="1686101867102" duration="1223000" />
-      <workItem from="1686103540117" duration="7119000" />
-      <workItem from="1686145791109" duration="1520000" />
-      <workItem from="1686148283263" duration="4021000" />
-      <workItem from="1686166188164" duration="1935000" />
-      <workItem from="1686168157691" duration="6000" />
-      <workItem from="1686168170544" duration="85000" />
-      <workItem from="1686168263139" duration="10187000" />
+      <workItem from="1686100246361" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1686098174945</created>
@@ -190,21 +128,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686100343933</updated>
     </task>
-    <task id="LOCAL-00004" summary="revise pom with dependencies from Spring Initializr">
-      <created>1686100581048</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1686100581048</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add environment variables to enable TLS certificate">
-      <created>1686171388846</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686171388846</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,8 +151,6 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Intellij files" />
     <MESSAGE value="add client module with default pom" />
-    <MESSAGE value="revise pom with dependencies from Spring Initializr" />
-    <MESSAGE value="add environment variables to enable TLS certificate" />
-    <option name="LAST_COMMIT_MESSAGE" value="add environment variables to enable TLS certificate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add client module with default pom" />
   </component>
 </project>
