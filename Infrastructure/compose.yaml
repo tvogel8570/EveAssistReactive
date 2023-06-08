@@ -1,3 +1,4 @@
+name: eve-assist-infrastructure
 services:
   eve-postgres:
     image: tvogel8570/eveassist
