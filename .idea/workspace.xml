@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="add client module with default pom">
-      <change afterPath="$PROJECT_DIR$/Api/src/main/java/com/eveassist/api/config/DatabaseConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/src/main/resources/db/migration/R__001populateRoles.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/src/main/resources/db/migration/V1.0__base.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Api/src/main/resources/db/migration/V1.1__role.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7dc9f9ed-d915-4c56-a610-1e9c20b82884" name="Changes" comment="remove duplicate exclusion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/eveassist/api/user/SecurityUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/eveassist/api/user/SecurityUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/eveassist/api/user/entity/EveAssistUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/eveassist/api/user/entity/EveAssistUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +141,7 @@
       <workItem from="1686097403986" duration="132000" />
       <workItem from="1686097661110" duration="1857000" />
       <workItem from="1686100246361" duration="260000" />
-      <workItem from="1686319175003" duration="1781000" />
+      <workItem from="1686319175003" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1686098174945</created>
@@ -173,7 +164,42 @@
       <option name="project" value="LOCAL" />
       <updated>1686100343933</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Intellij files">
+      <created>1686321031980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321031980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rearrange dependencies and add mapstruct">
+      <created>1686321089171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321089171</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add and configure flyway for database schema">
+      <created>1686321134093</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321134093</updated>
+    </task>
+    <task id="LOCAL-00007" summary="initial application properties">
+      <created>1686321173163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321173163</updated>
+    </task>
+    <task id="LOCAL-00008" summary="remove duplicate exclusion">
+      <created>1686321236716</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686321236716</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,9 +220,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial commit" />
-    <MESSAGE value="Intellij files" />
     <MESSAGE value="add client module with default pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="add client module with default pom" />
+    <MESSAGE value="Intellij files" />
+    <MESSAGE value="rearrange dependencies and add mapstruct" />
+    <MESSAGE value="add and configure flyway for database schema" />
+    <MESSAGE value="initial application properties" />
+    <MESSAGE value="remove duplicate exclusion" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove duplicate exclusion" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
