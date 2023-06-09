@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS roles_privileges (
 	role_id int8 NOT NULL,
 	privilege_id int8 NOT NULL,
 	CONSTRAINT roles_privileges_privilege_fk FOREIGN KEY (privilege_id) REFERENCES eve_assist_privilege,
-	CONSTRAINT roles_privileges_rold_fk FOREIGN KEY (role_id) REFERENCES eve_assist_role);
+	CONSTRAINT roles_privileges_role_fk FOREIGN KEY (role_id) REFERENCES eve_assist_role);
 
 -- public.users_roles definition
 -- DROP TABLE IF EXISTS users_roles;
