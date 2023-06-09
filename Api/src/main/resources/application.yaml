@@ -1,1 +1,14 @@
+server:
+  port: 8081
 
+spring:
+  config:
+    import: optional:classpath:env.properties
+  r2dbc:
+    url:
+      r2dbc:postgresql://localhost:5432/eve_assist_user
+    username: postgres
+    password: ${postgres.password}
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/eve_assist_user
