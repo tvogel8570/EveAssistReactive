@@ -24,6 +24,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,6 +43,7 @@ import java.util.Date;
 */
 @Table
 public class EveAssistUser implements Serializable, EveAssistUserKey {
+    @Serial
     private static final long serialVersionUID = 9029797325151444231L;
 
     @NotNull
@@ -91,5 +93,5 @@ public class EveAssistUser implements Serializable, EveAssistUserKey {
                 joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
                 inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     */
-    private Collection<EveAssistRole> roles = new ArrayList<EveAssistRole>();
+    private Collection<EveAssistRole> roles = new ArrayList<>();
 }
