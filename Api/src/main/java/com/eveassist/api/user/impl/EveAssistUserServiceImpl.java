@@ -4,8 +4,10 @@ import com.eveassist.api.user.EveAssistUserDao;
 import com.eveassist.api.user.EveAssistUserService;
 import com.eveassist.api.user.SecurityUser;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
+@Service
 public class EveAssistUserServiceImpl implements EveAssistUserService {
     private final EveAssistUserDao repository;
 
