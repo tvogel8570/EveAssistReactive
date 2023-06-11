@@ -19,8 +19,25 @@ class EveAssistUserDaoImplTest {
     @Test
     void findUserWithPrivileges() {
         assertThat(cut).isNotNull();
-        StepVerifier.create(cut.findUserWithPrivileges(anyString()))
+        StepVerifier.create(cut.findUserAndRoles(anyString()))
                 .expectSubscription()
-                .expectComplete();
+                .verifyComplete();
+    }
+
+    @Test
+    void findAllUserWithRoles() {
+        StepVerifier.create(cut.findAllUsersAndRoles())
+                .expectSubscription()
+                .expectNextMatches(eau->eau.getEmail().equals("test@test.com") && eau.getRoles().size() == 1 )
+                .expectNextMatches(eau->eau.getEmail().equals("test2@test.com") && eau.getRoles().size() == 2 )
+                .verifyComplete();
+    }
+
+    @Test
+    void findUserAndRoles() {
+        StepVerifier.create(cut.findUserAndRoles("123456789012345678901234567890"))
+                .expectSubscription()
+                .expectNextMatches(eau->eau.getEmail().equals("test@test.com") && eau.getRoles().size() == 1 )
+                .verifyComplete();
     }
 }
