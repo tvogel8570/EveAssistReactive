@@ -1,5 +1,6 @@
 package com.eveassist.api.user.impl;
 
+import com.eveassist.api.user.EveAssistUserDao;
 import io.r2dbc.spi.ConnectionFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,7 +28,7 @@ class EveAssistUserDaoImplTest {
     static PostgreSQLContainer<?> dbCont = new PostgreSQLContainer<>("postgres:15-alpine");
 
     @Autowired
-    EveAssistUserDaoImpl cut;
+    EveAssistUserDao cut;
 
     @Autowired
     ConnectionFactory connectionFactory;
