@@ -61,7 +61,8 @@ class EveAssistUserDaoImplWriteTest {
                 .verifyComplete();
 
         // verify failure
-        StepVerifier.create(cut.save(duplicateUser))
+        StepVerifier.create(
+                        cut.save(duplicateUser))
                 .verifyError(DataIntegrityViolationException.class);
     }
 
@@ -80,7 +81,8 @@ class EveAssistUserDaoImplWriteTest {
                 .verifyComplete();
 
         // verify success
-        StepVerifier.create(cut.save(newUser))
+        StepVerifier.create(
+                        cut.save(newUser))
                 .expectNextMatches(eau -> newUser.getEmail().equals(eau.getEmail())
                         && newUser.getUserUnique().equals(eau.getUserUnique())
                         && eau.getId() != null)

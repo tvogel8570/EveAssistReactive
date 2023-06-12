@@ -4,6 +4,13 @@ import com.eveassist.api.user.EveAssistUserCustomDao;
 import com.eveassist.api.user.entity.EveAssistRole;
 import com.eveassist.api.user.entity.EveAssistUser;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.r2dbc.convert.R2dbcConverter;
+import org.springframework.data.r2dbc.core.R2dbcEntityOperations;
+import org.springframework.data.r2dbc.core.ReactiveDataAccessStrategy;
+import org.springframework.data.r2dbc.repository.support.R2dbcRepositoryFactory;
+import org.springframework.data.r2dbc.repository.support.SimpleR2dbcRepository;
+import org.springframework.data.relational.repository.query.RelationalEntityInformation;
 import org.springframework.r2dbc.core.DatabaseClient;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
@@ -14,10 +21,25 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Repository
-public class EveAssistUserDaoImpl implements EveAssistUserCustomDao {
-    private final DatabaseClient dbc;
+public class EveAssistUserDaoImpl extends SimpleR2dbcRepository<EveAssistUser, Long> implements EveAssistUserCustomDao<EveAssistUser> {
+
+    @Autowired
+    private DatabaseClient dbc;
+
+    public EveAssistUserDaoImpl() {
+        dbc.getConnectionFactory().getMetadata().
+    }
+
+    public EveAssistUserDaoImpl(RelationalEntityInformation<EveAssistUser, Long> entity, R2dbcEntityOperations entityOperations, R2dbcConverter converter) {
+        super(entity, entityOperations, converter);
+    }
+
+    public EveAssistUserDaoImpl(RelationalEntityInformation<EveAssistUser, Long> entity, DatabaseClient databaseClient, R2dbcConverter converter, ReactiveDataAccessStrategy accessStrategy) {
+        super(entity, databaseClient, converter, accessStrategy);
+    }
 
     public EveAssistUserDaoImpl(DatabaseClient dbc) {
+        super();
         this.dbc = dbc;
     }
 
@@ -51,6 +73,13 @@ public class EveAssistUserDaoImpl implements EveAssistUserCustomDao {
                 .bufferUntilChanged(result -> result.get("id"))
                 .map(EveAssistUserDaoImpl::buildRoles);
     }
+
+    @Override
+    public <S extends EveAssistUser> Mono<S> save(S entity) {
+
+        return Mono.empty();
+    }
+
 
     private static EveAssistUser buildRoles(@NotNull List<Map<String, Object>> eau) {
         return EveAssistUser.builder()
