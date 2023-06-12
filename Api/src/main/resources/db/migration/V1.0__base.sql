@@ -2,14 +2,14 @@
 -- DROP TABLE public.eve_assist_user;
 CREATE TABLE IF NOT EXISTS public.eve_assist_user
 (
-    id              int8         NOT NULL,
-    create_date     timestamp    NOT NULL,
-    email           varchar(200) NOT NULL,
-    eau_password    text         NOT NULL,
-    eau_user_unique varchar(30)  NOT NULL,
-    eau_screen_name varchar(100) NOT NULL,
+    id          int8         NOT NULL,
+    create_date timestamp    NOT NULL,
+    email       varchar(200) NOT NULL,
+    password    text         NOT NULL,
+    user_unique varchar(30)  NOT NULL,
+    screen_name varchar(100) NOT NULL,
     CONSTRAINT eve_assist_user_email_key UNIQUE (email),
-    CONSTRAINT eve_assist_user_business_key UNIQUE (eau_user_unique),
+    CONSTRAINT eve_assist_user_business_key UNIQUE (user_unique),
     CONSTRAINT eve_assist_user_pkey PRIMARY KEY (id)
 );
 

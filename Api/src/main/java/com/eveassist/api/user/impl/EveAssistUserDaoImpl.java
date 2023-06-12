@@ -25,14 +25,14 @@ public class EveAssistUserDaoImpl implements EveAssistUserCustomDao {
     @Override
     public Mono<EveAssistUser> findUserAndRoles(String userName) {
         return dbc.sql("""
-                            select eau.id, eau.email, eau.eau_user_unique, eau.eau_screen_name, ear.role_name
+                            select eau.id, eau.email, eau.user_unique, eau.screen_name, ear.role_name
                             from eve_assist_user eau
                                 inner join users_roles ur on eau.id = ur.user_id
                                 inner join eve_assist_role ear on ear.id = ur.role_id
-                            where eau.eau_user_unique = :eau_user_unique
+                            where eau.user_unique = :user_unique
                             order by eau.id, ear.role_name
                         """)
-                .bind("eau_user_unique", userName)
+                .bind("user_unique", userName)
                 .fetch().all()
                 .bufferUntilChanged(result -> result.get("id"))
                 .map(EveAssistUserDaoImpl::buildRoles).next();
@@ -41,7 +41,7 @@ public class EveAssistUserDaoImpl implements EveAssistUserCustomDao {
     @Override
     public Flux<EveAssistUser> findAllUsersAndRoles() {
         return dbc.sql("""
-                            select eau.id, eau.email, eau.eau_user_unique, eau.eau_screen_name, ear.role_name
+                            select eau.id, eau.email, eau.user_unique, eau.screen_name, ear.role_name
                             from eve_assist_user eau
                                 inner join users_roles ur on eau.id = ur.user_id
                                 inner join eve_assist_role ear on ear.id = ur.role_id
