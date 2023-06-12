@@ -21,14 +21,15 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
 
 @Builder(toBuilder = true)
 @AllArgsConstructor
@@ -84,7 +85,7 @@ public class EveAssistUser implements Serializable, EveAssistUserKey {
     //        @Temporal(TemporalType.TIMESTAMP)
     @Builder.Default
     @Column //(name = "create_date", nullable = false)
-    private Date createDate = new Date();
+    private Instant createDate = Instant.now();
 
     /*
         @Builder.Default
@@ -93,5 +94,6 @@ public class EveAssistUser implements Serializable, EveAssistUserKey {
                 joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
                 inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     */
+    @Transient
     private Collection<EveAssistRole> roles = new ArrayList<>();
 }
